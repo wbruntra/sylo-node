@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head.ejs', {title: 'About Us - SYLO'}) %>
+
+  <body>
+
+    <%- include partials/header.ejs %>
+
+      <main id="about">
+        <div id="mission" class="screen screen--hero">
+          <img class="icon" src="../icons/icon_rocketship_outline_white.svg" width="72px" />
+          <h1>Our Mission</h1>
+          <p>
+            SYLO was founded by content marketing and technology industry veterans in response to marketers' frustration with influencer marketing measurement. We've created the standardized, independent verification that the Influencer Marketing space has been clamoring
+            for.
+          </p>
+          <noscript>
+            <a class="scroll-driver" href="#partners" style="margin-left: -18px">
+              <img src="../icons/icon_arrow_downward_white_24px.svg" width="24px" height="24px" />
+            </a>
+          </noscript>
+        </div>
+        <div id="partners" class="screen">
+          <img class="icon" src="../icons/icon_thumb_up_purple.svg" width="72px" />
+          <h2>Our Featured Partners</h2>
+          <ul class="partners__logos">
+            <li>
+              <img src="../img/logo-marriott.png" width="200px" title="Marriott" alt="Marriott logo" />
+            </li>
+            <li>
+              <img src="../img/logo-mountaindew.png" width="200px" title="Mountain Dew" alt="Mountain Dew logo" />
+            </li>
+            <li>
+              <img src="../img/logo-circlek.png" width="200px" title="Circle K" alt="Circle K logo" />
+            </li>
+            <li>
+              <img src="../img/logo-walmart.png" width="200px" title="Walmart" alt="Walmart logo" />
+            </li>
+          </ul>
+          <noscript>
+            <a class="scroll-driver" href="#careers" style="margin-left: -18px">
+              <img src="../icons/icon_arrow_downward_white_24px.svg" width="24px" height="24px" />
+            </a>
+          </noscript>
+        </div>
+        <div id="careers" class="screen screen--grey">
+          <img class="icon" src="../icons/icon_smile_purple.svg" width="72px" />
+          <h2>Work with us</h2>
+          <p>
+            We are always looking for amazing talent to join our team. Come grow with us!
+          </p>
+          <a href="/contact/all?next=/about" class="cta-button">Get in touch</a>
+          <noscript>
+            <a class="scroll-driver" href="#location" style="margin-left: -18px">
+              <img src="../icons/icon_arrow_downward_white_24px.svg" width="24px" height="24px" />
+            </a>
+          </noscript>
+        </div>
+        <div id="location" class="screen">
+          <img class="icon" src="../icons/icon_mapmarker_purple.svg" width="72px" />
+          <h2>Where we work</h2>
+          <div class="location__details">
+            <img class="location__map" src="../img/sylo-map.svg" />
+            <div class="location__details__cta">
+              <address>
+              72 Madison Avenue
+              <br />
+              10th Floor
+              <br />
+              New York, NY 10016
+            </address>
+              <a href="/contact/all?next=/about" class="cta-button">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </main>
+
+
+      <%- include partials/footer.ejs %>
+
+        <script defer src="js/bundle.js"></script>
+        <!-- Insert Analytics Scripts Here -->
+  </body>
+
+</html>

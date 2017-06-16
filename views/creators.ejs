@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head.ejs', {title: 'For Creators - SYLO'}) %>
+  <body>
+
+    <%- include partials/header.ejs %>
+
+    <main id="creators">
+      <div class="screen--video-intro">
+        <div class="video-container">
+          <video loop muted autoplay poster="../img/creator_beauty.png">
+            <source src="../vid/creator_beauty.webm" type="video/webm" />
+            <source src="../vid/creator_beauty.mp4" type="video/mp4" />
+            <source src="../vid/creator_beauty.ogv" type="video/ogg" />
+          </video>
+        </div>
+        <div class="scroll-container">
+          <div id="hello" class="screen">
+            <img class="icon" src="../icons/icon_camera_white.svg" width="72px" />
+            <h1>Hey there, creator</h1>
+            <p>
+              Brands are now demanding more data from creators like you to validate influence with your audiences. SYLO’s free Creator App gives you access to all of the data and insights you’ll need to better understand your audience and influence.
+            </p>
+            <a href="/contact/creator?next=/creators" class="cta-button">Get the Creator App</a>
+            <noscript>
+              <a class="scroll-driver" href="#why" style="margin-left: -18px">
+                <img src = "../icons/icon_arrow_downward_white_24px.svg" width="24px" height="24px" />
+              </a>
+            </noscript>
+          </div>
+        </div>
+      </div>
+      <div id="why" class="screen screen--hero">
+        <img class="icon" src="../icons/icon_spotlight_white.svg" width="72px" />
+        <h2>Why SYLO?</h2>
+        <p>
+          With SYLO, you'll now have the knowledge of which platforms, themes, and strategies captivate your audience and drive your top content.
+        </p>
+        <p>
+          SYLO’s team of experts classifies each of your posts into categories that brands are searching for, giving you valuable info that you can leverage to validate your fit for a campaign, creative ideas for the integration, and influence with your audience. All things that we believe will lead to longer-term and more lucrative partnerships with brands.
+        </p>
+        <noscript>
+          <a class="scroll-driver" href="#insights" style="margin-left: -18px">
+            <img src = "../icons/icon_arrow_downward_white_24px.svg" width="24px" height="24px" />
+          </a>
+        </noscript>
+      </div>
+      <div id="insights" class="screen screen--grey">
+        <img src="../icons/icon_campaign_report_purple.svg" width="72px" />
+        <h2>Unparalleled insights into your content</h2>
+        <ol class="ad__contact__screen__steps">
+          <li class="ad__contact__screen__step">
+            <h4>Discovery of top themes</h4>
+            <img src="../../img/top-categories-beauty-fashion.png" />
+          </li>
+          <li class="ad__contact__screen__step">
+            <h4>Scoring on every post</h4>
+            <img src="../../img/BeautyImageCreatorAd.png" />
+          </li>
+          <li class="ad__contact__screen__step">
+            <h4>Deep content insights</h4>
+            <img src="../../img/post-detailed-stats.png" />
+          </li>
+        </ol>
+        <noscript>
+          <a class="scroll-driver" href="#app" style="margin-left: -18px">
+            <img src = "../icons/icon_arrow_downward_white_24px.svg" width="24px" height="24px" />
+          </a>
+        </noscript>
+      </div>
+      <div id="app" class="screen">
+        <img src="../icons/icon_smartphone_purple_48px.svg" width="72px" />
+        <h2>How SYLO's creator app works</h2>
+        <ol class="ad__contact__screen__steps">
+          <li class="ad__contact__screen__step">
+            <h3>1</h3>
+            <h4>Registration</h4>
+            <p>We will send you instructions to register with SYLO's FREE and NO obligation mobile web app</p>
+            <img src="../../img/creator-app-stepper-1.png" />
+          </li>
+          <li class="ad__contact__screen__step">
+            <h3>2</h3>
+            <h4>Data Collection</h4>
+            <p>Answer a few simple questions about audience demographics and past campaigns so we can put your history in context</p>
+            <img src="../../img/creator-app-stepper-2.png" />
+          </li>
+          <li class="ad__contact__screen__step">
+            <h3>3</h3>
+            <h4>Gain New Insights</h4>
+            <p>Gain access to performance data of your content across Facebook, Twitter, Instagram, and YouTube</p>
+            <img src="../../img/creator-app-stepper-3.png" />
+          </li>
+        </ol>
+        <a href="/contact/creator?next=/creators" class="cta-button">Get the Creator App</a>
+      </div>
+    </main>
+
+    <%- include partials/footer.ejs %>
+
+    <script defer src="js/bundle.js"></script>
+    <!-- Insert Analytics Scripts Here -->
+  </body>
+</html>

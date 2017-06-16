@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head.ejs', {title: 'For Brands - SYLO'}) %>
+
+  <body>
+
+    <%- include partials/header.ejs %>
+
+      <main id="brands">
+        <div class="screen--video-intro">
+          <div class="video-container">
+            <video loop muted autoplay poster="../img/open-plan-working.jpg">
+              <source src="../vid/open-plan-working.webm" type="video/webm" />
+              <source src="../vid/open-plan-working.mp4" type="video/mp4" />
+              <source src="../vid/open-plan-working.ogv" type="video/ogg" />
+            </video>
+          </div>
+          <div class="scroll-container">
+            <div id="why" class="screen">
+              <img class="icon" src="../icons/icon_chart_white.svg" width="72px" />
+              <h1>Why SYLO?</h1>
+              <p>
+                As a brand marketer, you need unbiased, accurate, and independent measurement of your influencer marketing campaigns.
+              </p>
+              <p>
+                SYLO provides full transparency and verification of the metrics you require and has built additional measures to provide a fuller view of performance and campaign understanding.
+              </p>
+              <p>
+                Brands want to know whether they have partnered with the right creators, with the right type of content, on the right social platforms — SYLO provides these answers.
+              </p>
+              <a href="/contact/brand?next=/brands" class="cta-button">Request a demo</a>
+              <noscript>
+                <a class="scroll-driver" href="#measurement" style="margin-left: -18px">
+                  <img src="../icons/icon_arrow_downward_white_24px.svg" width="24px" height="24px" />
+                </a>
+              </noscript>
+            </div>
+          </div>
+        </div>
+        <div id="measurement" class="screen screen--hero">
+          <img class="icon" src="../icons/icon_lightbulb_white.svg" width="72px" />
+          <h2>Measurement &amp; Analytics</h2>
+          <p>
+            Our benchmark SYLO Score is influencer marketing’s equivalent to a Nielsen rating for a TV show.
+          </p>
+          <p>
+            It shows the average performance of specific posts. When you are considering a partnership with an influencer, their average performance is a key factor when choosing to work with them.
+          </p>
+          <p>
+            Using SYLO, you can standardize the measurement of every piece of paid influencer content, and easily compare performance across any number of campaigns.
+          </p>
+          <noscript>
+            <a class="scroll-driver" href="#what" style="margin-left: -18px">
+              <img src="../icons/icon_arrow_downward_white_24px.svg" width="24px" height="24px" />
+            </a>
+          </noscript>
+        </div>
+        <div id="what" class="screen screen--grey">
+          <img class="icon" src="../icons/icon_sylo_score_purple.svg" width="72px" />
+          <h2>What is a SYLO Score?</h2>
+          <p>
+            The SYLO Score compiles the various metrics you know, as well as metrics you don't see, sorted into reach, consumption and engagement, and then provides a weighted average based on brand-specified criteria.
+          </p>
+          <img class="sylo-score-elements" src="../img/sylo-score-equation.png" title="SYLO Score equation" alt="The SYLO Score is computed using public, private, and proprietary data." />
+          <noscript>
+            <a class="scroll-driver" href="#report" style="margin-left: -18px">
+              <img src="../icons/icon_arrow_downward_white_24px.svg" width="24px" height="24px" />
+            </a>
+          </noscript>
+        </div>
+        <div id="report" class="screen">
+          <img class="icon" src="../icons/icon_campaign_report_purple.svg" width="72px" />
+          <h2>How SYLO campaign reporting works</h2>
+          <p>
+            SYLO’s reports are just as effective for small campaigns with a couple of posts as they are for large activations utilizing dozens of influencers globally.
+          </p>
+          <p>
+            Our third-party measurement provides full transparency and verification into influencers’ posts within a campaign report to ensure that your influencer campaigns are working as hard as they can.
+          </p>
+          <p>
+            This includes both traditional measurement metrics and additional quantitative metrics that provide a deeper view into activity behind each post as it correlates to the benchmark SYLO Score.
+          </p>
+          <a href="/contact/brand?next=/brands" class="cta-button">Request a demo</a>
+        </div>
+      </main>
+
+      <%- include partials/footer.ejs %>
+
+        <script defer src="js/bundle.js"></script>
+        <!-- Insert Analytics Scripts Here -->
+  </body>
+
+</html>
