@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include('partials/head.ejs', {title: 'Get Your Insights - Brands - SYLO'}) %>
+<%- include('../partials/head.ejs', {title: 'Get Your Insights - Brands - SYLO'}) %>
   <body>
     <main id="contact__brand" class="modal">
-      <%- include("partials/contact-header.ejs") %>
+      <%- include("../partials/contact-header.ejs") %>
 
-      <img class="icon" src="../../icons/icon_chart_white.svg" height="72px" />
+      <img class="icon" src="/icons/icon_chart_white.svg" height="72px" />
       <h1>Get your campaign insights</h1>
       <form id="form2" name="form2" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="/syloforms">
         <h2>Before we give your brand the goods, give us your vitals.</h2>
@@ -124,7 +124,7 @@ chosen link or button. -->
 <script type="text/javascript"
   src="//www.googleadservices.com/pagead/conversion_async.js">
 </script>
-    <%- include partials/scripts.ejs %>
+    <%- include ../partials/scripts.ejs %>
     <!-- Insert Analytics Scripts Here -->
   </body>
 </html>

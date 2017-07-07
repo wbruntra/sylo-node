@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <%- include('partials/head.ejs', {title: 'Get Your Insights - SYLO'}) %>
+  <%- include('../partials/head.ejs', {title: 'Get Your Insights - SYLO'}) %>
   <body>
     <main id="contact" class="modal">
-      <%- include('partials/contact-header.ejs') %>
-      <img class="icon" src="../icons/icon_brain_white.svg" height="72px" />
+      <%- include('../partials/contact-header.ejs') %>
+      <img class="icon" src="/icons/icon_brain_white.svg" height="72px" />
       <h1>Get your insights</h1>
       <h2>I am a...</h2>
       <div class="contact__links">
@@ -13,13 +13,13 @@
           <h3>Brand</h3>
         </a>
         <a href="/contact/creator">
-          <img class="icon" src="../icons/icon_camera_white.svg" height="72px" />
+          <img class="icon" src="/icons/icon_camera_white.svg" height="72px" />
           <h3>Creator</h3>
         </a>
       </div>
       <h2>Neither? <a href="/contact/all">Contact us here!</a></h2>
     </main>
-    <script defer src="../js/bundle.js"></script>
+    <script defer src="/js/bundle.js"></script>
     <!-- Insert Analytics Scripts Here -->
   </body>
 </html>
