@@ -1,0 +1,37 @@
+Below is the Google AdWords Conversion Tracking code for conversion action Creator Form Submission. For the tracking to work, you'll need to make sure you include both the code snippet and the appropriate 'onClick' tags from one of our examples. This tells AdWords to record a conversion only when a customer clicks on a specific button, link, or image. If you don't include an 'onClick' tag in your HTML, no conversions will be registered.
+
+For examples see https://support.google.com/adwords/answer/6331304?&hl=en_US.
+  
+
+<!-- Google Code for Creator Form Submission Conversion Page
+In your html page, add the snippet and call
+goog_report_conversion when someone clicks on the
+chosen link or button. -->
+<script type="text/javascript">
+  /* <![CDATA[ */
+  goog_snippet_vars = function() {
+    var w = window;
+    w.google_conversion_id = 850224630;
+    w.google_conversion_label = "iQ0oCOTf43IQ9su1lQM";
+    w.google_remarketing_only = false;
+  }
+  // DO NOT CHANGE THE CODE BELOW.
+  goog_report_conversion = function(url) {
+    goog_snippet_vars();
+    window.google_conversion_format = "3";
+    var opt = new Object();
+    opt.onload_callback = function() {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  }
+  var conv_handler = window['google_trackConversion'];
+  if (typeof(conv_handler) == 'function') {
+    conv_handler(opt);
+  }
+}
+/* ]]> */
+</script>
+<script type="text/javascript"
+  src="//www.googleadservices.com/pagead/conversion_async.js">
+</script>

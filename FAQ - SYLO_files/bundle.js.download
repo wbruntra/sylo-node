@@ -294,8 +294,32 @@
     ];
 
     function contactUsFormSuccess() {
-      goog_report_conversion('http://www.meetsylo.com/thanks/contact');
-      window.location.replace('/thanks/contact');
+      var success = document.createElement('div');
+      success.className = 'success';
+      var successHeader = document.createElement('h3');
+      successHeader.textContent = 'Your message has been sent!';
+      var successMessage = document.createElement('p');
+      var successMessage1 = document.createElement('span');
+      successMessage1.textContent = "We'll get back to you in a New York minute. In the meantime, check out our ";
+      var successMessageLink = document.createElement('a');
+      successMessageLink.className = "faq-link";
+      successMessageLink.href = "/faq";
+      successMessageLink.textContent = "FAQs";
+      var successMessage2 = document.createElement('span');
+      successMessage2.textContent = ". You never know what you'll learn.";
+      var cta = document.createElement('a');
+      cta.href = '/';
+      cta.className = 'cta-button';
+      cta.textContent = 'Ok, thanks!';
+
+      successMessage.appendChild(successMessage1);
+      successMessage.appendChild(successMessageLink);
+      successMessage.appendChild(successMessage2);
+      success.appendChild(successHeader);
+      success.appendChild(successMessage);
+      success.appendChild(cta);
+
+      contactUsForm.parentNode.replaceChild(success, contactUsForm);
     }
 
     setupForm(
@@ -337,8 +361,21 @@
     ];
 
     function contactBrandFormSuccess() {
-      goog_report_conversion('http://www.meetsylo.com/thanks/brand')
-      window.location.replace('/thanks/brand')
+      var h1 = document.getElementsByTagName('h1')[0];
+      h1.textContent = "Powerful you have become.";
+      var success = document.createElement('div');
+      success.className = 'success';
+      var successMessage = document.createElement('p');
+      successMessage.textContent = "Your brand is on the path to greatness. A SYLO team member will be in touch soon with next steps.";
+      var cta = document.createElement('a');
+      cta.href = '/';
+      cta.className = 'cta-button';
+      cta.textContent = 'High five';
+
+      success.appendChild(successMessage);
+      success.appendChild(cta);
+
+      contactBrandForm.parentNode.replaceChild(success, contactBrandForm);
     }
 
     setupForm(
@@ -368,8 +405,24 @@
     ];
 
     function contactCreatorFormSuccess() {
-      goog_report_conversion('http://www.meetsylo.com/thanks/creator')
-      window.location.replace('/thanks/creator')
+      var h1 = document.getElementsByTagName('h1')[0];
+      if (h1 && h1.textContent.trim()) {
+        h1.textContent = "First learn stand. Then learn fly.";
+      }
+      var success = document.createElement('div');
+      success.className = 'success';
+      var successMessage = document.createElement('p');
+      successMessage.textContent = "Your social content is about to blast off. A SYLO team member will be in touch soon with launch codes.";
+
+      var cta = document.createElement('a');
+      cta.href = '/';
+      cta.className = 'cta-button';
+      cta.textContent = 'Drop the mic';
+
+      success.appendChild(successMessage);
+      success.appendChild(cta);
+
+      contactCreatorForm.parentNode.replaceChild(success, contactCreatorForm);
     }
 
     setupForm(

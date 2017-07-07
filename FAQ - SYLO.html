@@ -1,13 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
-  <%- include('partials/head.ejs', {title: 'FAQ - SYLO'}) %>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>FAQ - SYLO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:3000/apple-touch-icon.png?v=BGB3Rv4G4E">
+  <link rel="icon" type="image/png" href="http://localhost:3000/favicon-32x32.png?v=BGB3Rv4G4E" sizes="32x32">
+  <link rel="icon" type="image/png" href="http://localhost:3000/favicon-16x16.png?v=BGB3Rv4G4E" sizes="16x16">
+  <link rel="manifest" href="http://localhost:3000/manifest.json?v=BGB3Rv4G4E">
+  <link rel="mask-icon" href="http://localhost:3000/safari-pinned-tab.svg?v=BGB3Rv4G4E" color="#5e265e">
+  <link rel="shortcut icon" href="http://localhost:3000/favicon.ico?v=BGB3Rv4G4E">
+  <meta name="apple-mobile-web-app-title" content="SYLO">
+  <meta name="application-name" content="SYLO">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" type="text/css" href="./FAQ - SYLO_files/style.css">
+  <link href="./FAQ - SYLO_files/css" rel="stylesheet">
+</head>
+
   <body>
 
-    <%- include partials/header.ejs %>
+    <header>
+  <nav role="navigation" aria-label="Navigation">
+    <a href="http://localhost:3000/" title="Go to SYLO home page" id="logo" class="header__logo">
+      <img src="./FAQ - SYLO_files/SYLO-logo-whitetext-horizontal.png" title="SYLO" height="56">
+    </a>
+    <div>
+      <button id="hamburger" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-pressed="false" aria-label="Toggle navigation menu">
+        <div class="hamburger-bar hamburger-bun-top"></div>
+        <div class="hamburger-bar hamburger-patty"></div>
+        <div class="hamburger-bar hamburger-bun-bottom"></div>
+      </button>
+      <div class="navigation-links-container">
+        <ul class="navigation-links">
+          <li><a href="http://localhost:3000/brands">For Brands</a></li>
+          <li><a href="http://localhost:3000/creators">For Creators</a></li>
+          <li id="about-submenu" class="navigation-links__submenu navigation-links__submenu--about">
+            <a href="http://localhost:3000/about" aria-haspopup="true">About Us</a>
+            <ul class="navigation-submenu" aria-hidden="true" aria-label="submenu">
+              <li>
+                <a href="http://localhost:3000/about#mission">
+                  <svg fill="#000" width="24px" height="24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.08 64.08">
+                    <path d="M35.77,56.36l-3.18-3.18a4.6,4.6,0,0,0-5.66-.71l-2.19,1.34a22.12,22.12,0,0,0-10,13.29l-2.55,9.76,9.76-2.55a22.12,22.12,0,0,0,13.29-10l1.34-2.19A4.8,4.8,0,0,0,35.77,56.36Zm-9.19,10-5.52,1.41,1.41-5.52a12.35,12.35,0,0,1,5.59-7.42l1.27-.71a2.56,2.56,0,0,1,3.18.35l1.77,1.77a2.56,2.56,0,0,1,.35,3.18l-.71,1.27A11.45,11.45,0,0,1,26.58,66.4Z" transform="translate(-12.15 -12.79)"></path>
+                    <path d="M28.34,43a2,2,0,0,0,.35,2.47l4.74,4.17a63.15,63.15,0,0,1,6.15,6.15l4,4.53a1.86,1.86,0,0,0,2.4.42A63.65,63.65,0,0,0,75.51,18.32l.71-3.82a1.5,1.5,0,0,0-1.7-1.7l-3.11.57A64.84,64.84,0,0,0,28.34,43Zm35-17.61a6,6,0,1,1-8.49,0A6,6,0,0,1,63.34,25.39Z" transform="translate(-12.15 -12.79)"></path>
+                    <path d="M51.89,59l3.32,8.27a1.17,1.17,0,0,0,2.12.28l1.91-2.76a22.06,22.06,0,0,0,3.68-15.56.49.49,0,0,0-.92-.21,66.8,66.8,0,0,1-9.62,9.33l-.14.14C51.89,58.62,51.82,58.84,51.89,59Z" transform="translate(-12.15 -12.79)"></path>
+                    <path d="M21.55,33.66,29.83,37a.71.71,0,0,0,.64-.21l.14-.14A60,60,0,0,1,39.94,27a.49.49,0,0,0-.21-.92,22.06,22.06,0,0,0-15.56,3.68l-2.76,1.91a1,1,0,0,0,.14,2Z" transform="translate(-12.15 -12.79)"></path>
+                  </svg>
+                  Our Mission
+                </a>
+              </li>
+              <li>
+                <a href="http://localhost:3000/about#partners">
+                  <svg fill="#000" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"></path>
+                  </svg>
+                  Our Partners
+                </a>
+              </li>
+              <li>
+                <a href="http://localhost:3000/about#careers">
+                  <svg fill="#000" width="24px" height="24px" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1262 1075q-37 121-138 195t-228 74-228-74-138-195q-8-25 4-48.5t38-31.5q25-8 48.5 4t31.5 38q25 80 92.5 129.5t151.5 49.5 151.5-49.5 92.5-129.5q8-26 32-38t49-4 37 31.5 4 48.5zm-494-435q0 53-37.5 90.5t-90.5 37.5-90.5-37.5-37.5-90.5 37.5-90.5 90.5-37.5 90.5 37.5 37.5 90.5zm512 0q0 53-37.5 90.5t-90.5 37.5-90.5-37.5-37.5-90.5 37.5-90.5 90.5-37.5 90.5 37.5 37.5 90.5zm256 256q0-130-51-248.5t-136.5-204-204-136.5-248.5-51-248.5 51-204 136.5-136.5 204-51 248.5 51 248.5 136.5 204 204 136.5 248.5 51 248.5-51 204-136.5 136.5-204 51-248.5zm128 0q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"></path>
+                  </svg>
+                  Careers
+                </a>
+              </li>
+              <li>
+                <a href="http://localhost:3000/about#location">
+                  <svg fill="#000" width="24px" height="24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120.33 178">
+                    <path d="M297.67,481.5A16.51,16.51,0,0,1,282.55,472l-41.1-87.14c-2.7-5.71-4-12.45-4-21.23a60.17,60.17,0,0,1,120.33,0c0,8.77-1.26,15.52-4,21.23l-41,87.17A16.85,16.85,0,0,1,297.67,481.5Zm0-173a55.23,55.23,0,0,0-55.17,55.17c0,8,1.1,14.07,3.48,19.09l41.11,87.18a11.67,11.67,0,0,0,10.58,6.56,11.83,11.83,0,0,0,10.7-6.57l41-87.17c2.37-5,3.48-11.08,3.48-19.09A55.23,55.23,0,0,0,297.67,308.5Zm0,86.5A31.33,31.33,0,1,1,329,363.67,31.37,31.37,0,0,1,297.67,395Zm0-57.67A26.33,26.33,0,1,0,324,363.67,26.36,26.36,0,0,0,297.67,337.33Z" transform="translate(-237.5 -303.5)"></path>
+                  </svg>
+                  Location
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="http://localhost:3000/faq">FAQs</a></li>
+          <li class="navigation-links__score"><a href="http://localhost:3000/contact">Get Your Insights</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
 
         <main id="faq">
           <div class="faq-hero">
-            <img class="icon" src="../icons/icon_question_mark_white.svg" width="72px" />
+            <img class="icon" src="./FAQ - SYLO_files/icon_question_mark_white.svg" width="72px">
             <h1>Frequently Asked Questions</h1>
           </div>
           <div class="faq-content-container">
@@ -15,11 +96,11 @@
               <li class="faq-menu__header">
                 Jump to Category
                 <button id="faq-menu__toggle">
-                  <img src="../icons/icon_arrow_up_white.svg" width="32px" height="32px" />
+                  <img src="./FAQ - SYLO_files/icon_arrow_up_white.svg" width="32px" height="32px">
                 </button>
               </li>
-              <li><a href="#for-creators">For Creators</a></li>
-              <li><a href="#for-brands">For Brands</a></li>
+              <li><a href="http://localhost:3000/faq#for-creators">For Creators</a></li>
+              <li><a href="http://localhost:3000/faq#for-brands">For Brands</a></li>
             </ul>
             <div class="faq-content">
               <div id="for-creators" class="faq-content__section">
@@ -113,8 +194,8 @@
                 </p>
                 <p class="answer">
                   Your manager can log into your SYLO account using the same log-in credentials you created when you registered with SYLO.
-                  <br />
-                  <br />
+                  <br>
+                  <br>
                   <em>Please note: SYLO does not store your password and will never share your login credentials with anyone.</em>
                 </p>
 
@@ -175,15 +256,86 @@
               </div>
               <div class="faq-cta">
                 <p>Do you still have questions?</p>
-                <a href="/contact" class="cta-button">Contact Us</a>
+                <a href="http://localhost:3000/contact" class="cta-button">Contact Us</a>
               </div>
             </div>
           </div>
         </main>
 
-    <%- include partials/footer.ejs %>
+    <footer>
+  <div class="footer__main">
+    <div class="links links--services">
+      <h4>Our Services</h4>
+      <ul>
+        <li><a href="http://localhost:3000/brands">For Brands</a></li>
+        <li><a href="http://localhost:3000/creators">For Creators</a></li>
+        <li><a href="http://localhost:3000/contact">Get Your Insights</a></li>
+        <li><a href="https://app.meetsylo.com/">Visit the Creator App</a></li>
+      </ul>
+    </div>
+    <div class="links links--company">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="http://localhost:3000/about#mission">Our Mission</a></li>
+        <li><a href="http://localhost:3000/about#partners">Our Partners</a></li>
+        <li><a href="http://localhost:3000/about#careers">Careers</a></li>
+        <li><a href="http://localhost:3000/about#location">Location</a></li>
+      </ul>
+    </div>
+    <div class="links links--customers">
+      <h4>Customer Care</h4>
+      <ul>
+        <li><a href="http://localhost:3000/faq">FAQs</a></li>
+        <li><a href="http://localhost:3000/contact/all">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="updates">
+      <h4>Get Updates</h4>
+      <form action="http://meetsylo.us15.list-manage.com/subscribe/post?u=5f4dc1ccf93330a637ad62ce3&amp;id=58d5e7dce7" method="post" target="_blank" novalidate="" name="email-signup">
+        <div class="form__contents">
+          <div class="field-group">
+            <label for="email">Email Address</label>
+            <input id="email" type="email" name="EMAIL" value="" placeholder="your email address" required="" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+              <input type="text" name="b_5f4dc1ccf93330a637ad62ce3_58d5e7dce7" tabindex="-1" value="">
+            </div>
+            <input class="cta-button" type="submit" name="subscribe" value="Subscribe">
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="logo">
+      <img src="./FAQ - SYLO_files/SYLO-logo-graytext-vertical.png" title="SYLO logo" height="88px">
+    </div>
+  </div>
+  <div class="footer__social">
+    <a class="footer__social__logo footer__social__logo--twitter" href="https://twitter.com/meetsylo" target="_blank" rel="noopener noreferrer">
+      <img title="@ us on Twitter" alt="Twitter logo" src="./FAQ - SYLO_files/twitter_logo.png" height="48px">
+    </a>
+    <a class="footer__social__logo footer__social__logo--linkedin" href="https://www.linkedin.com/company-beta/7957476" target="_blank" rel="noopener noreferrer">
+      <img title="Connect with us on LinkedIn" alt="LinkedIn logo" src="./FAQ - SYLO_files/linkedin_logo.png" height="32px">
+    </a>
+    <a class="footer__social__logo footer__social__logo--instagram" href="https://instagram.com/meetsylo" target="_blank" rel="noopener noreferrer">
+      <img title="Follow us on Instagram" alt="Instagram logo" src="./FAQ - SYLO_files/instagram_logo.png" height="48px">
+    </a>
+    <a class="footer__social__logo footer__social__logo--facebook" href="https://facebook.com/meetsylo" target="_blank" rel="noopener noreferrer">
+      <img title="Like us on Facebook" alt="Facebook logo" src="./FAQ - SYLO_files/facebook_logo.png" height="32px">
+    </a>
+  </div>
+  <div class="footer__endnotes">
+    <address>
+      72 Madison Avenue, 10th Floor, New York, NY 10016
+    </address>
+    <p class="copyright">
+      Copyright © 2017 SYLO Inc. | <a href="http://localhost:3000/terms">Terms of Use</a> &amp; <a href="http://localhost:3000/privacy">Privacy Policy</a>
+    </p>
+  </div>
+</footer>
 
-    <%- include partials/scripts.ejs %>
+
+    <script defer="" src="./FAQ - SYLO_files/bundle.js.download"></script>
     <!-- Insert Analytics Scripts Here -->
-  </body>
-</html>
+
+
+</body></html>

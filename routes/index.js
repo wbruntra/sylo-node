@@ -18,8 +18,12 @@ router.get('/faq', function(req, res, next) {
   res.render('faq', {});
 });
 
+router.get('/contact', function(req, res, next) {
+  res.render('contact')
+})
+
 router.get('/contact/all', function(req, res, next) {
-  res.render('contactAll');
+  res.render('contact-all');
 });
 
 router.get('/contact/brand', function(req, res, next) {
@@ -28,6 +32,10 @@ router.get('/contact/brand', function(req, res, next) {
 
 router.get('/contact/creator', function(req, res, next) {
   res.render('contactCreator');
+});
+
+router.get('/contact/influencer-marketing', function(req, res, next) {
+  res.render('contact-influencer-marketing');
 });
 
 router.get('/contact', function(req, res, next) {
@@ -44,6 +52,23 @@ router.get('/privacy', function(req, res, next) {
 
 router.get('/terms', function(req, res, next) {
   res.render('terms', {});
+});
+
+router.get('/thanks/contact', function(req,res,next) {
+  res.render('thanks-contact');
+});
+
+router.get('/thanks/brand', function(req,res,next) {
+  res.render('thanks-brand');
+});
+
+router.get('/thanks/creator', function(req,res,next) {
+  res.render('thanks-creator');
+});
+
+router.post('/syloforms', function(req, res, next) {
+  console.log(req.params);
+  res.send('OK');
 });
 
 
