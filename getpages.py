@@ -6,7 +6,9 @@ print(saveDir)
 baseUrl = "http://localhost:3000/"
 
 sites = ['contact/all','contact/brand','contact/creator',
-        'thanks/brand','thanks/contact','thanks/creator',]
+        'thanks/brand','thanks/contact','thanks/creator',
+        'contact/influencer-marketing','faq','brands',
+        'about']
 
 for site in sites:
     r = requests.get(baseUrl + site)
