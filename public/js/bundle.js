@@ -241,7 +241,6 @@
   if (about) {
     initScrollDriver([
       document.getElementById('mission'),
-      document.getElementById('partners'),
       document.getElementById('careers'),
       document.getElementById('location'),
     ]);
