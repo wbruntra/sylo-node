@@ -5,10 +5,10 @@ saveDir = os.path.join(os.getcwd(), 'saved')
 print(saveDir)
 baseUrl = "http://localhost:3000/"
 
-sites = ['contact/all','contact/brand','contact/creator',
+sites = ['','about','faq','brands','contact',
+        'contact/all','contact/brand','contact/creator',
         'thanks/brand','thanks/contact','thanks/creator',
-        'contact/influencer-marketing','faq','brands',
-        'about']
+        'contact/influencer-marketing',]
 
 for site in sites:
     r = requests.get(baseUrl + site)
