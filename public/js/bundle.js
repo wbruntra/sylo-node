@@ -293,7 +293,7 @@
     ];
 
     function contactUsFormSuccess() {
-      goog_report_conversion('http://www.meetsylo.com/thanks/contact');
+      // goog_report_conversion('http://www.meetsylo.com/thanks/contact');
       window.location.replace('/thanks/contact');
     }
 
@@ -336,8 +336,12 @@
     ];
 
     function contactBrandFormSuccess() {
-      goog_report_conversion('http://www.meetsylo.com/thanks/brand')
-      window.location.replace('/thanks/brand')
+      // goog_report_conversion('http://www.meetsylo.com/thanks/brand')
+      if (window.location.pathname === '/contact/influencer-marketing') {
+        window.location.replace('/thanks/influencer')
+      } else {
+        window.location.replace('/thanks/brand')
+      }
     }
 
     setupForm(
@@ -367,7 +371,7 @@
     ];
 
     function contactCreatorFormSuccess() {
-      goog_report_conversion('http://www.meetsylo.com/thanks/creator')
+      // goog_report_conversion('http://www.meetsylo.com/thanks/creator')
       window.location.replace('/thanks/creator')
     }
 
