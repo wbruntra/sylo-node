@@ -13,6 +13,7 @@ sites = ['',
         'contact/creator','contact/influencer-marketing'
         'creators',
         'faq',
+        'privacy',
         'thanks/brand','thanks/contact','thanks/creator'
         ]
 
