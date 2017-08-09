@@ -6,10 +6,6 @@ router.get('/', function(req, res, next) {
   res.render('main');
 });
 
-router.get('/contact', function(req, res, next) {
-  res.render('contact/contact');
-});
-
 router.get('/contact/:name', function(req, res, next) {
   res.render('contact/' + req.params.name);
 });
